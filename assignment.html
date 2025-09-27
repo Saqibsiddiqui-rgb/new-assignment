@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculator(a,b, operator){
+    if(operator === "+"){
+    return a + b;
+    }
+    else if(operator === "-"){
+        return a - b;
+    }
+    else if(operator ==="*"){
+        return a * b;
+    }
+    else if(operator ==="/"){
+        if(b === 0){
+            return "Error division by zero";
+        }
+        return a / b;
+    }
+    else{
+        return "Invalid Operator";
+    }
+}
+let A = parseInt(prompt("Enter the value"));
+let B =parseInt(prompt("Enter second value"));
+let C =(prompt("Enter operator +,-,*,/"));
+let result = calculator(A,B,C);
+
+document.write("Result: ",result);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
